@@ -5,35 +5,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://kalmanolah.net/</loc>
-<lastmod>2015-09-12T22:30:15-00:00</lastmod>
+<lastmod>2015-09-12T22:32:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kalmanolah.net/archives.html</loc>
-<lastmod>2015-09-12T22:30:15-00:00</lastmod>
+<lastmod>2015-09-12T22:32:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kalmanolah.net/tags.html</loc>
-<lastmod>2015-09-12T22:30:15-00:00</lastmod>
+<lastmod>2015-09-12T22:32:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kalmanolah.net/categories.html</loc>
-<lastmod>2015-09-12T22:30:15-00:00</lastmod>
+<lastmod>2015-09-12T22:32:47-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://kalmanolah.net/pages/about.html</loc>
-<lastmod>2015-09-12T22:30:15-00:00</lastmod>
+<lastmod>2015-09-12T22:32:47-00:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -109,22 +109,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kalmanolah.net/tag/symfony2.html</loc>
+<lastmod>2014-06-21T17:24:25+00:18</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kalmanolah.net/tag/lxc.html</loc>
 <lastmod>2014-07-17T23:37:19+00:18</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://kalmanolah.net/tag/jenkins-ci.html</loc>
-<lastmod>2014-06-12T18:30:11+00:18</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://kalmanolah.net/tag/python.html</loc>
-<lastmod>2014-12-21T23:00:00+00:18</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -137,6 +130,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>https://kalmanolah.net/tag/docker.html</loc>
+<lastmod>2014-07-17T23:37:19+00:18</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>https://kalmanolah.net/tag/php.html</loc>
 <lastmod>2014-06-21T17:24:25+00:18</lastmod>
 <changefreq>daily</changefreq>
@@ -144,14 +144,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kalmanolah.net/tag/horrible.html</loc>
-<lastmod>2014-07-17T23:37:19+00:18</lastmod>
+<loc>https://kalmanolah.net/tag/jenkins-ci.html</loc>
+<lastmod>2014-06-12T18:30:11+00:18</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://kalmanolah.net/tag/docker.html</loc>
+<loc>https://kalmanolah.net/tag/horrible.html</loc>
 <lastmod>2014-07-17T23:37:19+00:18</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -165,8 +165,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>https://kalmanolah.net/tag/symfony2.html</loc>
-<lastmod>2014-06-21T17:24:25+00:18</lastmod>
+<loc>https://kalmanolah.net/tag/python.html</loc>
+<lastmod>2014-12-21T23:00:00+00:18</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
