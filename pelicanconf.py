@@ -39,7 +39,7 @@ CATEGORY_FEED_RSS = 'feeds/%s.rss'
 FEED_MAX_ITEMS = 10
 
 # Links
-LINKS = (('Source', 'https://github.com/kalmanolah/blog'),)
+LINKS = (('Source', 'https://github.com/kalmanolah/kalmanolah.github.io/tree/source'),)
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/kalmanolah'),
