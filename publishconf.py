@@ -11,6 +11,6 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *  # noqa
 
-SITEURL = 'https://kalmanolah.net'
+SITEURL = 'http://kalmanolah.net'
 
 DELETE_OUTPUT_DIRECTORY = True
