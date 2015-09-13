@@ -4,19 +4,18 @@ Hi, I'm Kalman. I'm a techie from [Antwerp][1], Belgium.
 
 ### Me
 
-I'm an introvert at heart, but I've gotten pretty good at coping with that by overacting.  
-My defence mechanism of (unconscious) choice is humor.  
+My defence mechanism of choice is humor.  
 I don't like spiders, or any bugs for that matter.  
 My music taste is all over the place.  
-I don't really think wasting away in front of my computer is a waste.  
 I'm a bit of a perfectionist.  
 My code style is always the best style.  
-I hope to one day experience *good* AR/VR.
+I hope to one day experience *good* AR/VR.  
+I'm not very good at getting anything bluetooth-related to work properly.
 
 ### Work
 
 I help save the world from proprietary software and technologies as an Open Source Consultant at [Inuits][2], together with a bunch of amazing people.  
-It's like being a superhero, except for me getting paid and not getting to wear a wape.
+It's like being a superhero, except I get paid in money instead of gratitude.
 
 ### Technical
 
