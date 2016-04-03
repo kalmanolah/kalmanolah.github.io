@@ -21,7 +21,7 @@ Default Authentication Failure Handler.&lt;/p&gt;
 &lt;p&gt;The only functionality we'll add is the logging of IP addresses when
 authentication fails, in order to be able to extra data from our logs (stored in
 app/logs/) using fail2ban.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
 
 &lt;span class="c1"&gt;# src/Your/ExampleBundle/EventHandler/AuthenticationFailureHandler.php&lt;/span&gt;
 &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="nx"&gt;Your\ExampleBundle\EventHandler&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -46,34 +46,34 @@ app/logs/) using fail2ban.&lt;/p&gt;
 
 &lt;p&gt;As you can see, the only real functionality we've added is the logging. Now for
 the matching service definition:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# src/Your/ExampleBundle/Resources/config/services.yml&lt;/span&gt;
-&lt;span class="l-Scalar-Plain"&gt;services&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
-    &lt;span class="l-Scalar-Plain"&gt;your.examplebundle.authenticationfailurehandler&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
-        &lt;span class="l-Scalar-Plain"&gt;class&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;Your\ExampleBundle\EventHandler\AuthenticationFailureHandler&lt;/span&gt;
-        &lt;span class="l-Scalar-Plain"&gt;arguments&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="p-Indicator"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;@http_kernel&amp;quot;&lt;/span&gt;&lt;span class="p-Indicator"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;@security.http_utils&amp;quot;&lt;/span&gt;&lt;span class="p-Indicator"&gt;,&lt;/span&gt; &lt;span class="p-Indicator"&gt;{},&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;@logger&amp;quot;&lt;/span&gt;&lt;span class="p-Indicator"&gt;]&lt;/span&gt;
-        &lt;span class="l-Scalar-Plain"&gt;tags&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
-            &lt;span class="p-Indicator"&gt;-&lt;/span&gt; &lt;span class="p-Indicator"&gt;{&lt;/span&gt; &lt;span class="nv"&gt;name&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;monolog.logger&amp;#39;&lt;/span&gt;&lt;span class="p-Indicator"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;channel&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;security&amp;#39;&lt;/span&gt; &lt;span class="p-Indicator"&gt;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# src/Your/ExampleBundle/Resources/config/services.yml&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;services&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+    &lt;span class="l l-Scalar l-Scalar-Plain"&gt;your.examplebundle.authenticationfailurehandler&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;class&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;Your\ExampleBundle\EventHandler\AuthenticationFailureHandler&lt;/span&gt;
+        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;arguments&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;@http_kernel&amp;quot;&lt;/span&gt;&lt;span class="p p-Indicator"&gt;,&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;@security.http_utils&amp;quot;&lt;/span&gt;&lt;span class="p p-Indicator"&gt;,&lt;/span&gt; &lt;span class="p p-Indicator"&gt;{},&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;@logger&amp;quot;&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;
+        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;tags&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+            &lt;span class="p p-Indicator"&gt;-&lt;/span&gt; &lt;span class="p p-Indicator"&gt;{&lt;/span&gt; &lt;span class="nv"&gt;name&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;monolog.logger&amp;#39;&lt;/span&gt;&lt;span class="p p-Indicator"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;channel&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;security&amp;#39;&lt;/span&gt; &lt;span class="p p-Indicator"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;You'll also need to tell Symfony to use your handler by specifying a
 failure_handler in your security.yml, like so:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;# app/config/security.yml&lt;/span&gt;
-    &lt;span class="l-Scalar-Plain"&gt;firewalls&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
-        &lt;span class="l-Scalar-Plain"&gt;main&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
-            &lt;span class="l-Scalar-Plain"&gt;pattern&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;^/&lt;/span&gt;
-            &lt;span class="l-Scalar-Plain"&gt;form_login&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;
-                &lt;span class="l-Scalar-Plain"&gt;provider&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;fos_userbundle&lt;/span&gt;
-                &lt;span class="l-Scalar-Plain"&gt;csrf_provider&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;form.csrf_provider&lt;/span&gt;
-                &lt;span class="l-Scalar-Plain"&gt;failure_handler&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;your.examplebundle.authenticationfailurehandler&lt;/span&gt;
-            &lt;span class="l-Scalar-Plain"&gt;logout&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;       &lt;span class="l-Scalar-Plain"&gt;true&lt;/span&gt;
-            &lt;span class="l-Scalar-Plain"&gt;anonymous&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt;    &lt;span class="l-Scalar-Plain"&gt;true&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# app/config/security.yml&lt;/span&gt;
+    &lt;span class="l l-Scalar l-Scalar-Plain"&gt;firewalls&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+        &lt;span class="l l-Scalar l-Scalar-Plain"&gt;main&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+            &lt;span class="l l-Scalar l-Scalar-Plain"&gt;pattern&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;^/&lt;/span&gt;
+            &lt;span class="l l-Scalar l-Scalar-Plain"&gt;form_login&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;
+                &lt;span class="l l-Scalar l-Scalar-Plain"&gt;provider&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;fos_userbundle&lt;/span&gt;
+                &lt;span class="l l-Scalar l-Scalar-Plain"&gt;csrf_provider&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;form.csrf_provider&lt;/span&gt;
+                &lt;span class="l l-Scalar l-Scalar-Plain"&gt;failure_handler&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;your.examplebundle.authenticationfailurehandler&lt;/span&gt;
+            &lt;span class="l l-Scalar l-Scalar-Plain"&gt;logout&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;       &lt;span class="l l-Scalar l-Scalar-Plain"&gt;true&lt;/span&gt;
+            &lt;span class="l l-Scalar l-Scalar-Plain"&gt;anonymous&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt;    &lt;span class="l l-Scalar l-Scalar-Plain"&gt;true&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;p&gt;Alright, that's it for the Symfony part. You should be seeing the IP address of
 any offenders in your &lt;code&gt;app/logs/%kernel.environment%.log&lt;/code&gt; file, like so:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[2013-11-03 23:24:55] security.INFO: Authentication request failed: Bad credentials [] []&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[2013-11-03 23:24:55] security.INFO: Authentication request failed: Bad credentials [] []&lt;/span&gt;
 &lt;span class="k"&gt;[2013-11-03 23:24:55] security.ERROR: Authentication failure for IP: 127.0.0.1 [] []&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -82,7 +82,7 @@ any offenders in your &lt;code&gt;app/logs/%kernel.environment%.log&lt;/code&gt;
 &lt;h2&gt;Creating a custom fail2ban filter for Symfony2&lt;/h2&gt;
 &lt;p&gt;To create a new filter for fail2ban, we'll create a file in
 &lt;code&gt;/etc/fail2ban/filter.d/symfony.conf&lt;/code&gt; with the following contents:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[Definition]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[Definition]&lt;/span&gt;
 &lt;span class="na"&gt;failregex&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;Authentication\sfailure\sfor\sIP:\s&amp;lt;HOST&amp;gt;\s&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -90,7 +90,7 @@ any offenders in your &lt;code&gt;app/logs/%kernel.environment%.log&lt;/code&gt;
 &lt;p&gt;That was easy, right? We should create a jail in &lt;code&gt;/etc/fail2ban/jail.local&lt;/code&gt;
 which uses our new filter. The definition for this jail will depend on your
 configuration, but a basic one could look like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;[symfony]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;[symfony]&lt;/span&gt;
 &lt;span class="na"&gt;enabled&lt;/span&gt;   &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;true&lt;/span&gt;
 &lt;span class="na"&gt;filter&lt;/span&gt;    &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;symfony&lt;/span&gt;
 &lt;span class="na"&gt;logpath&lt;/span&gt;   &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;/var/www/my-project/app/logs/prod.log&lt;/span&gt;
@@ -127,7 +127,7 @@ things... or most of 'em anyway.&lt;/p&gt;
 &lt;p&gt;Making a command that deletes old sessions from the database is pretty
 straightforward.
 Here's an example:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
 
 &lt;span class="c1"&gt;// src/Your/Bundle/Command/SessionsPurgeCommand.php&lt;/span&gt;
 &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="nx"&gt;Your\Bundle\Command&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -174,7 +174,7 @@ stored in the database. This means you could get stats from logged in users,
 queue notifications for users, check certain types of history.. stuff like that.&lt;/p&gt;
 &lt;p&gt;Here's an example command which prints out a list and count of users who have
 been active in the last 10 minutes:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;&amp;lt;?php&lt;/span&gt;
 
 &lt;span class="c1"&gt;// src/Your/Bundle/Command/SessionsCheckCommand.php&lt;/span&gt;
 &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="nx"&gt;Your\Bundle\Command&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
