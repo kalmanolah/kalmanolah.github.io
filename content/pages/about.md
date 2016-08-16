@@ -5,30 +5,26 @@ Hi, I'm Kalman. I'm a techie born and raised in [Antwerp][1], Belgium.
 ### Me
 
 If we perform _a lot_ of cherry-picking, I would describe myself as a
-perfectionistic, at times stubborn yet generally easy-going person.
+perfectionistic, stubborn person. I dislike bugs, spiders and extreme heat.
+I'm also a neat freak. My defence mechanism of choice is humor. &#128517;
 
-I'm not a big fan of bugs and spiders, which is one of the primary reasons for
-me preferring winter over summer.
-
-Being introverted and socially inept by nature, my social circle has turned
-out relatively small as a result.
-
-My defence mechanism of choice is humor.
-
-My passion lies in making stuff. My strong point lies in analyzing stuff.
+I like making stuff, be it software, games, circuits or even furniture.
 
 ### Work
 
-I help save the world from proprietary software and technologies as an Open
-Source Consultant at [Inuits][2], together with a bunch of amazing people.  
-It's like being a superhero, except I also get paid.
+I help save the world from proprietary software as an Open Source Consultant
+(read: jack-of-all-trades) at [Inuits][2], together with a bunch of amazing
+people. It's like being a superhero, except I also get paid.
 
 ### Technical
 
-I'm a pretty big fan of all things technical, which has lead to me having a
-pretty broad skillset.  
-If you feel like checking out what I mean by that, you are always welcome to
-take a look at [my Github page][3] or [my LinkedIn profile][4].
+I like to believe that I'm pretty good in turning an unknown unknown into a
+known unknown. I generally let the internet take it from there.
+
+Due to my interests I have obtained a skillset that I would say is pretty
+*broad*, for lack of a better word.
+
+You are always welcome to take a look at [my Github page][3] or [my LinkedIn profile][4].
 
 ### Hobbies
 
