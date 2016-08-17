@@ -1,14 +1,13 @@
 Title: About
 
 Hi, I'm Kalman. I'm a techie born and raised in [Antwerp][1], Belgium.
+I like making stuff, be it software, games, circuits or even furniture.
 
 ### Me
 
 If we perform _a lot_ of cherry-picking, I would describe myself as a
 perfectionistic, stubborn person. I dislike bugs, spiders and extreme heat.
 I'm also a neat freak. My defence mechanism of choice is humor. &#128517;
-
-I like making stuff, be it software, games, circuits or even furniture.
 
 ### Work
 
@@ -18,11 +17,10 @@ people. It's like being a superhero, except I also get paid.
 
 ### Technical
 
-I like to believe that I'm pretty good in turning an unknown unknown into a
-known unknown. I generally let the internet take it from there.
+I like to believe that I'm pretty good in turning unknown unknown into known
+unknowns. I generally let the internet take it from there.
 
-Due to my interests I have obtained a skillset that I would say is pretty
-*broad*, for lack of a better word.
+I'd also say that my skillset is pretty broad, for lack of a better word.
 
 You are always welcome to take a look at [my Github page][3] or [my LinkedIn profile][4].
 

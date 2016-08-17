@@ -56,6 +56,8 @@ EXTRA_PATH_METADATA = {
     'assets/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
     'assets/favicon.ico': {'path': 'favicon.ico'},
 }
+CUSTOM_CSS = 'assets/css/custom.css'
+
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
@@ -63,7 +65,7 @@ EXTRA_PATH_METADATA = {
 # Theme && Theme-specific
 THEME = './modules/pelican-flex'
 FAVICON = '/favicon.ico'
-PYGMENTS_STYLE = 'monokai'
+PYGMENTS_STYLE = 'github'
 
 # Basic site info
 SITETITLE = SITENAME
