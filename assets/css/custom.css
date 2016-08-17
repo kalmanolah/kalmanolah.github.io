@@ -1,0 +1,12 @@
+// body * + * {
+//   margin-top: 1.5rem;
+//   font-size: calc(1em + 1vw);
+// }
+
+// li + li {
+//     margin-top: inherit;
+// }
+
+// aside + main {
+//     margin-top: inherit;
+// }
