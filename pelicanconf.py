@@ -51,7 +51,7 @@ SOCIAL = (('github', 'https://github.com/kalmanolah'),
 # Assets
 STATIC_PATHS = ['assets']
 EXTRA_PATH_METADATA = {
-    'assets/CNAME': {'path': 'CNAME'},
+    # 'assets/CNAME': {'path': 'CNAME'},
     'assets/robots.txt': {'path': 'robots.txt'},
     'assets/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
     'assets/favicon.ico': {'path': 'favicon.ico'},
@@ -91,7 +91,11 @@ MENUITEMS = (('Archives', '/archives.html'),
 
 # Plugins
 PLUGIN_PATHS = ['./modules/pelican-plugins']
-PLUGINS = ['optimize_images', 'sitemap', 'gzip_cache']
+PLUGINS = [
+    'optimize_images',
+    'sitemap',
+    'gzip_cache',
+]
 
 # Plugin config
 GZIP_CACHE_OVERWRITE = False
